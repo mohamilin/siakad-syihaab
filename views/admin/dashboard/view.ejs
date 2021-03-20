@@ -1,96 +1,117 @@
+<!-- Header -->
 <%- include('../../partial/header.ejs') %>
-
-<body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
-    <%- include('../../partial/navbar.ejs') %>
-    <%- include('../../partial/sidebar.ejs') %>
-        <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1 class="m-0">Dashboard</h1>
-                        </div><!-- /.col -->
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Dashboard</li>
-                            </ol>
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!-- /.container-fluid -->
-            </div>
-            <!-- main -->
-            <div class="container-fluid">
-                <!-- Small boxes (Stat box) -->
-                <div class="row">
-                  <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-info">
-                      <div class="inner">
-                        <h3>1.500</h3>
-        
-                        <p>Jumlah Siswa</p>
-                      </div>
-                      <div class="icon">
-                        <i class="ion ion-university"></i>
-                      </div>
-                      <a href="#" class="small-box-footer">Detail Information <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-success">
-                      <div class="inner">
-                        <h3>55<sup style="font-size: 20px"></sup></h3>
-        
-                        <p>Jumlah Kelas</p>
-                      </div>
-                      <div class="icon">
-                        <ion-icon name="person-add-outline"></ion-icon>
-                        <i class="ion ion-android-bookmark"></i>
-                      </div>
-                      <a href="#" class="small-box-footer">Detail Information <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-warning">
-                      <div class="inner">
-                        <h3>44</h3>
-        
-                        <p>Jumlah Guru</p>
-                      </div>
-                      <div class="icon">
-                        <i class="ion ion-person-add"></i>
-                      </div>
-                      <a href="#" class="small-box-footer">Detail Information <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-danger">
-                      <div class="inner">
-                        <h3>65</h3>
-        
-                        <p>Jumlah Donator</p>
-                      </div>
-                      <div class="icon">
-                        <i class="ion ion-ios-star"></i>
-                      </div>
-                      <a href="#" class="small-box-footer">Detail Information <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                  </div>
-                  <!-- ./col -->
-                </div>
-            </div>
+<!-- end Header -->
+<body class="theme-red">
+   <!-- Page Loader -->
+        <!-- isi dengan loading -->
+   <!-- end page Loader -->
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
         </div>
     </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <%- include('../../partial/navbar.ejs') %>
+    <!-- End Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+        <!-- Menu Sidebar -->
+    <%- include('../../partial/sidebar.ejs') %>
+        <!-- Footer -->
     <%- include('../../partial/footer.ejs') %>
-    <%- include('../../partial/js.ejs') %>
+        </aside>
+        <!-- #END# Left Sidebar -->
 
-    
+        <!-- Content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>DASHBOARD</h2>
+            </div>
+
+            <!-- Widgets -->
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box bg-pink hover-expand-effect">
+                        <div class="icon">
+                            <i class="material-icons">playlist_add_check</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">NEW TASKS</div>
+                            <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box bg-cyan hover-expand-effect">
+                        <div class="icon">
+                            <i class="material-icons">help</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">NEW TICKETS</div>
+                            <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box bg-light-green hover-expand-effect">
+                        <div class="icon">
+                            <i class="material-icons">forum</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">NEW COMMENTS</div>
+                            <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box bg-orange hover-expand-effect">
+                        <div class="icon">
+                            <i class="material-icons">person_add</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">NEW VISITORS</div>
+                            <div class="number count-to" data-from="0" data-to="1225" data-speed="1000" data-fresh-interval="20"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #END# Widgets -->
+            <!-- CPU Usage -->
+            <div class="row clearfix">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="card">
+                        <div class="header">
+                            <div class="row clearfix">
+                                <div class="col-xs-12 col-sm-6">
+                                    <h2>Penggunaan CPU (%)</h2>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 align-right">
+                                    <div class="switch panel-switch-btn">
+                                        <span class="m-r-10 font-12">REAL TIME</span>
+                                        <label>OFF<input type="checkbox" id="realtime" checked><span class="lever switch-col-cyan"></span>ON</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div id="real_time_chart" class="dashboard-flot-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #END# CPU Usage -->           
+        </div>
+    </section>
+<%- include('../../partial/js.ejs') %> 
