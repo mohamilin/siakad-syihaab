@@ -28,8 +28,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/adminLte', express.static(path.join(__dirname, 'node_modules/admin-lte')));
-
+// app.use('/adminLte', express.static(path.join(__dirname, 'node_modules/admin-lte')));
+// app.use('/gentelAdmin', express.static(path.join(__dirname, 'node_modules/gentelella')));
+app.use('/concept', express.static(path.join(__dirname, 'node_modules/adminbsb-materialdesign')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
