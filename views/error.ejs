@@ -1,3 +1,10 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<%- include('./partial/header.ejs') %>
+<body class="four-zero-four">
+    <div class="four-zero-four-container">
+        <div class="error-code">404</div>
+        <div class="error-message">This page doesn't exist</div>
+        <div class="button-place">
+            <a href="/" class="btn btn-default btn-lg waves-effect">GO TO HOMEPAGE</a>
+        </div>
+    </div>
+<%- include('./partial/js.ejs') %>
