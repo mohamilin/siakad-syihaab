@@ -1,0 +1,46 @@
+<!-- Header -->
+<%- include('../../../partial/header.ejs') %>
+<!-- end Header -->
+<body class="theme-red">
+   <!-- Page Loader -->
+        <!-- isi dengan loading -->
+   <!-- end page Loader -->
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <%- include('../../../partial/navbar.ejs') %>
+    <!-- End Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+        <!-- Menu Sidebar -->
+    <%- include('../../../partial/sidebar.ejs') %>
+        <!-- Footer -->
+    <%- include('../../../partial/footer.ejs') %>
+        </aside>
+        <!-- #END# Left Sidebar -->
+            <!-- Content -->
+    <section class="content">
+      <div class="container-fluid">
+          <div class="block-header">
+              <h2>Data Lembaga</h2>
+          </div>
+    <%- include('./table.ejs') %>
+    <%- include('./add.ejs') %>
+
+          </div>
+    </section>
+<%- include('../../../partial/js.ejs') %>    
